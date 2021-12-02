@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+hr {
+    margin: 100px auto 100px auto;
+    width: 10%;
+    border-top: 6px dotted #EAF6F6;
+    border-bottom: none;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-size: 5.625rem;
+    color: #66BFBF;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #66BFBF;
+    font-weight: bold;
+}
+
+img {
+    display: inline-block;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.sap {
+    font-weight: bold;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.sap-sac {
+    width: 30%;
+    float: left;
+    margin: 0px 30px auto auto;
+}
+
+.sap-hana {
+    width: 20%;
+    float: right;
+    margin: auto 30px auto auto;
+}
+
+.skill-row {
+    margin: 100px auto 100px auto;
+    width: 50%;
+    text-align: left;
+    line-height: 2;
+}
+
+.introduction {
+    color: #40514E;
+    width: 27.5%;
+    text-align: center;
+    margin: auto;
+    line-height: 2;
+}
+
+.bottom-container {
+    margin-top: 70px;
+    height: 100px;
+    background-color: #66BFBF;
+    font-size: 1.5rem;
+}
+
+.message {
+    margin-bottom: 50px;
+}
+
+.btn {
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
+    background-color: #66BFBF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a {
+    margin-top: 30px;
+    height: 50px;
+    font-size: 1rem;
+    color: #428686;
+    background-color: #66BFBF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.bottom {
+    margin-top: 20px;
+    font-size: .75rem;
+}
+
+#personalPhoto {
+    width: 150px;
+}
