@@ -82,7 +82,7 @@
 		<script>
 			function sendMessageToSAC() {
 				var theIFrame = document.getElementById('theIFrame').contentWindow;
-				theIFrame.postMessage("Hello World","https://pwc-solutions-dev.eu10.hcs.cloud.sap");
+				theIFrame.postMessage("Hello World","https://pwc-solutions-dev.eu10.hcs.cloud");
 			}
 		
 			window.addEventListener("message", receiveMessageFromSAC, false);
