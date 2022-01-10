@@ -60,6 +60,38 @@
         <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
         <p class="bottom">© Chia-Yu Wu.</p>
     </div>
+    <table>
+			<tr>
+				<td>Click to send "Hello World" to app</td>
+				<td>
+					<button onclick="sendMessageToSAC()">Send</button>
+				</td>
+			</tr>
+			<tr>
+				<td>Response = </td>
+				<td id="response"></td>
+			</tr>
+		</table>
+
+		<iframe id="theIFrame" 
+				src="https://appdesign.eu10.sapanalytics.cloud/sap/fpa/ui/tenants/5c065/bo/application/571D82EA222811C3D005E820D0B79393?mode=embed" 
+				height="500" 
+				width="1000">
+		</iframe>
+
+		<script>
+			function sendMessageToSAC() {
+				var theIFrame = document.getElementById('theIFrame').contentWindow;
+				theIFrame.postMessage("Hello World","https://appdesign.eu10.sapanalytics.cloud");
+			}
+		
+			window.addEventListener("message", receiveMessageFromSAC, false);
+
+			function receiveMessageFromSAC(event) {
+			  var responseElement = document.getElementById('response');
+			  responseElement.textContent = event.data;
+			}
+		</script>
 </body>
 
 </html>
